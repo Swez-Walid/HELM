@@ -5,8 +5,8 @@ metadata:
   namespace: helm  
 spec:
   type: {{ .Values.service.type }}
-   ports:
-     - port: {{ .Values.service.port }}
-       targetPort: 5000
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 5000
   selector:
-    app: {{ .Release.Name }}
+  app: {{ .Release.Name }}
