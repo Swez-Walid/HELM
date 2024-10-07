@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: dpage/pgadmin4
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+
+env:
+  PGADMIN_DEFAULT_EMAIL: admin@admin.com
+  PGADMIN_DEFAULT_PASSWORD: root
